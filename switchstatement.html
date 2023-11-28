@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statments</title>
+</head>
+<body>  
+</body>
+<!-- SWITCH STATEMENTS -->
+<!-- <script>
+// program using switch statement
+let a = 5;
+switch (a){
+    case 1:
+        a = 'one';
+        document.write('one');
+        break;
+    case 2:
+        a = 'two';
+        document.write('two');
+        break;
+    case 3:
+        a = 'three';
+        document.write('three');
+        break;
+    case 4:
+        a = 'four';
+        document.write('four');
+        break;
+    default:
+        a = 'not found';
+        document.write('not found');
+        break;
+    }
+
+
+</script> -->
+
+<!-- <script>
+    let result;
+    // take the operator input
+   const operator = prompt('Enter operator (either +,-,* or/):');
+
+   const number1 = parseFloat(prompt('Enter first number'));
+   const number2 = parseFloat(prompt('Enter second number'));
+
+   switch(operator){
+case '+':
+    result = number1 + number2;
+
+    // to display all functions
+// document.write(`${number1} + ${number2} = ${result}`);
+
+//  to display only the answer
+document.write(result);
+break;
+   }  
+    </script> -->
+
+    <script>
+        // take the operator input
+        let result;
+       const operator = prompt('Enter operator (either +,-,* or/):');
+    
+       const number1 = parseFloat(prompt('Enter first number'));
+       const number2 = parseFloat(prompt('Enter second number'));
+    
+       switch(operator){
+        // division
+    case '/':
+        result = number1 / number2;
+            // to display all functions
+    // document.write(`${number1} + ${number2} = ${result}`);
+    
+    //  to display only the answer
+    document.write(result);
+    break;
+    case '+':
+        result = number1 + number2;
+            // to display all functions
+    // document.write(`${number1} + ${number2} = ${result}`);
+    
+    //  to display only the answer
+    document.write(result);
+    break;
+    case '-':
+        result = number1 - number2;
+            // to display all functions
+    // document.write(`${number1} + ${number2} = ${result}`);
+    
+    //  to display only the answer
+    document.write(result);
+    break;
+    case '*':
+        result = number1 * number2;
+            // to display all functions
+    // document.write(`${number1} + ${number2} = ${result}`);
+    
+    //  to display only the answer
+    document.write(result);
+    break;
+    default:
+        document.write('invalid operator');
+       }  
+
+  
+        </script>
+
+</html> 
