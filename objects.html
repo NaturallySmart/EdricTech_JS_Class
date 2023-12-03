@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+<body>
+
+
+    <!-- <script>
+        const o=new Object();
+        o.foo = 42;
+        console.log(o);
+   </script> -->
+
+
+    <!-- WHEN ONE OF THE PROPERTY OF THE OBJECT IS A NUMBER -->
+
+    <!-- <script>
+        let school = {
+        name:'Vivekananda School',
+        location: 'Delhi',
+        established: '1971',
+        20: 1000,
+
+        displayInfo : function(){
+            console.log(`The value of the Key 20 is ${school['20']}`);
+
+
+        }
+            }
+
+            school.displayInfo();
+    </script> -->
+
+
+    <!-- WHEN CALLING MORE THAN ONE VARIABLE -->
+
+    <!-- <script>
+        let school = {
+        name:'Vivekananda School',
+        location: 'Delhi',
+        established: '1971',
+        20: 1000,
+
+        displayInfo : function(){
+            console.log(`${school.name} was established in ${school.established} at ${school.location}`);
+
+
+        }
+            }
+
+            // school.displayInfo();
+
+            // TO CALL ONLY ONE VARIABLE
+
+            // console.log(school.location);
+
+            // STRINGS AND NUMBERS CAN BE CALLED AS BELOW BUT NUMBERS CAN'T BE CALLED AS ABOVE
+
+
+            console.log(school['20']);
+
+
+    </script> -->
+
+
+<!-- CREATING AN OBJECT -->
+
+<!-- <script>
+let person = {
+gender : "male"
+
+}
+
+let person1 = Object.create(person);
+person1.name = "Adam";
+person1.age = 45;
+person1.nationality = "Australian";
+
+// console.log(person1);
+
+// TO ITERATE OVER ALL THE KEYS OF THE OBJECT
+
+for (let value in person1){
+console.log(key);
+
+}
+
+</script> -->
+
+
+<!-- DELETING PROPERTIES OF AN OBJECT -->
+<script>
+let obj1 = {
+propfirst: 'Name'
+
+}
+
+// To output Name
+
+console.log(obj1.propfirst);
+
+delete obj1.propfirst
+
+
+// // Output Undefined
+
+console.log(obj1.propfirst);
+
+</script>
+</body>
+</html>
