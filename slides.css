@@ -1,0 +1,38 @@
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    height: 80vh;
+  }
+
+
+  .mySlides{
+align-items: center;
+padding: 10px;
+display: none;
+  }
+  
+  img{
+width: 30%;
+height: 30%;
+
+
+  }
+
+  button{
+    cursor: pointer;
+    width: 10%;
+    border: none;
+    margin-top: -30px;
+    padding: 16px;
+    background-color: #f78383;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+   }
+  
+
+   .buttons{
+/* position: absolute; */
+margin-left: 35px;
+
+   }
