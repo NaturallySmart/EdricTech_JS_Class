@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slide Example</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+     
+    .slide-container {
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+
+.slide {
+    display: none;
+    position: absolute;
+    margin-left: 100px;
+    /* Start slides off-screen to the right */
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transition for left and opacity */
+    opacity: 0;
+}
+.slide.active {
+    /* Slide the active slide into view */
+    opacity: 1;
+    display: block;
+    
+}
+.slide img {
+    width: 70%;
+    height: auto;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="slide-container">
+        <div class="slide active">
+            <img src="image/snare.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="image/tom3.png" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="image/kick.png" alt="Slide 3">
+        </div>
+    </div>
+    <!-- Next and Previous buttons -->
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<script>
+    let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach(slide => {
+       // slide.style.display = 'none';
+       console.log(slide.classList.toggle('active'))
+       //slide.classList.remove('active'); // Remove active class from all slides
+    });
+    slides[index].classList.add('active'); // Add active class to the current slide
+}
+
+function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+    showSlide(currentSlideIndex);
+}
+// Automatic slideshow
+function startSlideshow() {
+    setInterval(nextSlide, 5000); // Change slide every 3 seconds (adjust as needed)
+}
+// Initial display
+showSlide(currentSlideIndex);
+startSlideshow();
+
+// function prevSlide() {
+//     currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+//     showSlide(currentSlideIndex);
+// }
+
+// // Initial display
+// showSlide(currentSlideIndex);
+
+// // Event listeners for next and previous buttons
+// document.querySelector('#nextBtn').addEventListener('click', nextSlide);
+// document.querySelector('#prevBtn').addEventListener('click', prevSlide);
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
