@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT DOM</title>
+</head>
+<!-- <body onload="myFunction()">
+ 
+    <h1>HTML DOM Events</h1>
+    <h2>The onload Events</h2>
+
+
+</body>
+
+<script>
+function myFunction(){
+// alert("Page is loaded")
+// document.write("Page is loaded")
+console.log("Page is loaded")
+}
+</script> -->
+
+<!-- TO CHECK COOKIES ON BROWSER -->
+
+<body onload="checkCookies()">
+    <h2>Javascript HTML Events</h2>
+<p id="demo"></p>
+
+<script>
+function checkCookies(){
+var text ="";
+if(navigator.cookiesEnabled==true){
+text = "cookies are enabled.";
+
+} else{
+text = "cookies are not enabled.";
+
+}
+document.getElementById("demo").innerHTML = text;
+// console.log(text)
+}
+</script>
+</body>
+ </html>
