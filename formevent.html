@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+<p>Select a new car from the list</p>
+<select id="mySelect" onchange="myFunction()">
+<option value="Audi">Audi</option>
+<option value="BMW">BMW</option>
+<option value="Benz">Benz</option>
+<option value="Volvo">Volvo</option>
+</select>
+    
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+<script>
+function myFunction(){
+var x = document.getElementById("mySelect").value;
+document.getElementById("demo").innerHTML = "You selected:" + x;
+
+}
+
+
+
+</script>
+</body> -->
+
+<body>
+<h2>Javascript HTML Events</h2>    
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case</p>
+
+<script>
+function upperCase(){
+const x = document.getElementById("fname");
+x.value = x.value.toUpperCase();
+}
+
+
+</script>
+
+</body>
+
+
+
+</html>
